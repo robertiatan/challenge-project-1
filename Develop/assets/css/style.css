@@ -24,7 +24,8 @@ body {
     color: #d9dcd6;
 }
 
-.header div {
+/* Changed element name from .header div to .nav to fit semantics within HTML file */
+.nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,18 +33,22 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
+/* .header div ul {
+    list-style-type: none;     REMOVED
 }
 
+Condensed .header div ul into .header div ul li*/
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
+    list-style-type: none;
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
+    /* Added padding to separate nav elements. */
+    padding: 20px;
 }
 
 p {
@@ -51,7 +56,8 @@ p {
 }
 
 .hero {
-    height: 800px;
+/* Changed height from 800px to 100% in order to render image properly following changes to HTML code */
+    height: 100%;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
@@ -86,63 +92,65 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
+.benefit-lead,
+.benefit-brand,
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
+/* Condensed benefit-lead, brand, and cost into one sequence, where margin and color can apply to all at once. 
 
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
+.benefit-brand {
+    margin-bottom: 32px;  REMOVED
+    color: #ffffff;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+.benefit-cost {
+    margin-bottom: 32px;  REMOVED
+    color: #ffffff;
+} */
 
+.benefit-lead h3,
+.benefit-brand h3,
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
+/* Condensed benefit-lead, brand, and cost h3 elements into one sequence, where margin and text-align can apply to all at once.
 
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+.benefit-brand h3 {
+    margin-bottom: 10px;  REMOVED
+    text-align: center;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+.benefit-cost h3 {
+    margin-bottom: 10px;  REMOVED
+    text-align: center;
+} */
 
+.benefit-lead img,
+.benefit-brand img,
 .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
+/* Condensed benefit-lead, brand, and cost img elements into one sequence, where display, margin, and max-width can apply to all at once.
 
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;  REMOVED
+    max-width: 150px;
 }
 
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;  REMOVED
+    max-width: 150px;
+} */
+
+.search-engine-optimization,
+.social-media-marketing,
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
@@ -151,42 +159,58 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+/* Condensed elements so all can be affected by attributes at once.
+
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   REMOVED
+    background-color: #0072bb;
+    color: #ffffff;
+}
 
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   REMOVED
     background-color: #0072bb;
     color: #ffffff;
-}
+} */
 
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
+.search-engine-optimization img,
+.online-reputation-management img,
 .social-media-marketing img {
     max-height: 200px;
 }
+/* Condensed img elements so max-height can apply to all at once.
 
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+.online-reputation-management img {
+    max-height: 200px;                   REMOVED
 }
 
+.social-media-marketing img {
+    max-height: 200px;                   REMOVED
+} */
+
+.search-engine-optimization h2,
+.social-media-marketing h2,
 .online-reputation-management h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
+/* Condensed h2 elements so margin and font-size can apply to all at once.
 
-.social-media-marketing h2 {
-    margin-bottom: 20px;
+.online-reputation-management h2 {
+    margin-bottom: 20px;                REMOVED
     font-size: 36px;
 }
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;                REMOVED
+    font-size: 36px;
+} */
 
 .footer {
     padding: 30px;
